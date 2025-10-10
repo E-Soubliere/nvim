@@ -2,7 +2,7 @@ local config = {}
 
 function config.setup()
     vim.g.mapleader = " "
-    vim.keymap.set('n', "<leader>qq", vim.cmd.Ex)
+    vim.keymap.set('n', "<leader>q", vim.cmd.Ex)
     vim.keymap.set('n', "<leader>bb", "<C-t>")
     vim.keymap.set('n', "<leader>ww", vim.cmd.w)
     vim.keymap.set('n', "<leader>wq", function()
@@ -10,7 +10,9 @@ function config.setup()
         vim.cmd.Ex()
     end)
     vim.keymap.set('n', "<leader>oo", "<cmd>Outline<CR>")
-    vim.keymap.set('n', "<leader>of", "<cmd>OutlineFocus<CR>")
+    vim.keymap.set('n', "<C-h>", "<C-w>h")
+    vim.keymap.set('n', "<C-l>", "<C-w>l")
+    vim.keymap.set('n', "<C-d>", "<cmd>lua vim.diagnostic.open_float()<CR>")
     vim.opt.number = true
     vim.showmatch = true
     vim.opt.ignorecase = true
