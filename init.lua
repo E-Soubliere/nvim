@@ -51,4 +51,5 @@ require('lazy').setup({
   {'m4xshen/autoclose.nvim'},
   {'hedyhli/outline.nvim'},
   {'alvan/vim-closetag'},
+  {'windwp/nvim-ts-autotag'},
 })
